@@ -23,7 +23,6 @@ I'm Harsh. I love building utilities aimed at increasing Developer productivity 
 
 <!--START_SECTION:activity-->
 
-<!--END_SECTION:activity-->
 <!--
 
 Here are some ideas to get you started:
