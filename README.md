@@ -25,6 +25,8 @@ I'm Harsh. I love building utilities aimed at increasing Developer productivity 
 1. 🗣 Commented on [#184](https://github.com/radix-ui/icons/pull/184#issuecomment-2440003101) in [radix-ui/icons](https://github.com/radix-ui/icons)
 <!--END_SECTION:activity-->
 
+
+[![activity graph](https://github-readme-activity-graph.vercel.app/graph?username=hackerHarsh-77&theme=github-dark-dimmed&custom_title=Harsh%20Activity%20Graph&hide_border=true)](https://github.com/hcakerHarsh-77/github-readme-activity-graph)
 <!--
 
 Here are some ideas to get you started:
