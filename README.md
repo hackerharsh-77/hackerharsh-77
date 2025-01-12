@@ -61,8 +61,5 @@ hobbies: ["Basketball", "Cinema", "Competitive Gaming", "IoT"]
 
 ## 📈 GitHub Contributions
 <!--3D Contribution Graph-->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-south-season.svg">
-  <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-south-season.svg">
-</picture>
+## 📈 GitHub Activity Graph
+![3D Profile](./profile-3d-contrib/profile-night-rainbow.svg)
