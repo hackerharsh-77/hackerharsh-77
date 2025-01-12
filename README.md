@@ -54,6 +54,15 @@ currently_learning: ["Web3", "React", "Vue"]
 will_learn: ["Blockchain (backend)"]
 hobbies: ["Basketball", "Cinema", "Competitive Gaming", "IoT"]
 ```
+<!--Waka readme stats-->
+## 📊 Weekly Development Breakdown
 <!--START_SECTION:waka-->
-Added waka time
 <!--END_SECTION:waka-->
+
+## 📈 GitHub Contributions
+<!--3D Contribution Graph-->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-south-season.svg">
+  <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-south-season.svg">
+</picture>
