@@ -47,7 +47,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin output
           git checkout main
-          git merge origin/output --no-edit
+          git merge origin/output --no-edit --allow-unrelated-histories
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
