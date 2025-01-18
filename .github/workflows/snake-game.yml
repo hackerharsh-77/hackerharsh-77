@@ -2,7 +2,7 @@ name: Snake contribution grid
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Fixed cron syntax
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch all history for proper merging
+          fetch-depth: 0
       
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
@@ -36,7 +36,7 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Using default GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Clean and merge output branch
         if: success()
@@ -47,11 +47,17 @@ jobs:
           # Remove existing files to prevent conflicts
           rm -f github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
           
-          # Fetch and merge
+          # Fetch and merge with allow-unrelated-histories
           git fetch origin output
           git checkout main
           git pull origin main
-          git merge origin/output --no-edit -X theirs
+          
+          # Force copy the files from output branch
+          git checkout origin/output -- dist/github-contribution-grid-snake.svg dist/github-contribution-grid-snake-dark.svg
+          
+          # Stage, commit and push the changes
+          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          git commit -m "Update contribution snake" || echo "No changes to commit"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
