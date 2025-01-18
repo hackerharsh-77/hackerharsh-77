@@ -44,18 +44,23 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Remove existing files to prevent conflicts
-          rm -f github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
-          
-          # Fetch and merge with allow-unrelated-histories
+          # Setup branches
           git fetch origin output
           git checkout main
           git pull origin main
           
-          # Force copy the files from output branch
-          git checkout origin/output -- dist/github-contribution-grid-snake.svg dist/github-contribution-grid-snake-dark.svg
+          # Create dist directory if it doesn't exist
+          mkdir -p dist
           
-          # Stage, commit and push the changes
+          # Copy files from output branch to dist directory
+          git show origin/output:github-contribution-grid-snake.svg > dist/github-contribution-grid-snake.svg
+          git show origin/output:github-contribution-grid-snake-dark.svg > dist/github-contribution-grid-snake-dark.svg
+          
+          # Move files to root directory
+          mv dist/github-contribution-grid-snake.svg .
+          mv dist/github-contribution-grid-snake-dark.svg .
+          
+          # Stage and commit
           git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
           git commit -m "Update contribution snake" || echo "No changes to commit"
           git push origin main
