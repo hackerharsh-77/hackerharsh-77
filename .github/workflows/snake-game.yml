@@ -1,12 +1,9 @@
 name: Snake contribution grid
 
 on:
-  # run automatically every 12 hours
   schedule:
-    - cron: "0 */6 * * *"
-
+    - cron: "0 */6 * * *"  # Fixed cron syntax
   workflow_dispatch:
-
   push:
     branches:
       - main
@@ -18,39 +15,43 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
+    
     steps:
-      # Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      # Generates a snake game from a GitHub user's contributions graph
-      - name: generate github-contribution-grid-snake.svg
+        with:
+          fetch-depth: 0  # Fetch all history for proper merging
+      
+      - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      
-      # Push the generated SVG files to the output branch
-      - name: Push github-contribution-grid-snake.svg to the output branch
+
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Using default GITHUB_TOKEN
 
-      # Merge the output branch into the main branch
-      - name: Merge output branch into main
+      - name: Clean and merge output branch
         if: success()
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Remove existing files to prevent conflicts
+          rm -f github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          
+          # Fetch and merge
           git fetch origin output
           git checkout main
-          git merge origin/output --no-edit --allow-unrelated-histories
+          git pull origin main
+          git merge origin/output --no-edit -X theirs
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
