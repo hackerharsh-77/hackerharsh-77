@@ -56,9 +56,9 @@ hobbies: ["Basketball", "Cinema", "Competitive Gaming", "IoT"]
 ```
 <!--Waka readme stats-->
 ## 📊 Weekly Development Breakdown
-<!--START_SECTION:waka-->
+<!--START_SECTION:SHOW_LINES_OF_CODE-->
 
-<!--END_SECTION:waka-->
+<!--END_SECTION:SHOW_LINES_OF_CODE-->
 
 ## 📈 GitHub Contributions
 <!--3D Contribution Graph-->
