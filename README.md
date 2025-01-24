@@ -61,7 +61,6 @@ hobbies: ["Basketball", "Cinema", "Competitive Gaming", "IoT"]
 <!--END_SECTION:SHOW_LINES_OF_CODE-->
 
 <!--START_SECTION:waka-->
-
 <!--END_SECTION:waka-->
 
 ## 📈 GitHub Contributions
