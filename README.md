@@ -60,6 +60,10 @@ hobbies: ["Basketball", "Cinema", "Competitive Gaming", "IoT"]
 
 <!--END_SECTION:SHOW_LINES_OF_CODE-->
 
+<!--START_SECTION:waka-->
+[Your Wakatime stats would go here]
+<!--END_SECTION:waka-->
+
 ## 📈 GitHub Contributions
 <!--3D Contribution Graph-->
 ## 📈 GitHub Activity Graph
