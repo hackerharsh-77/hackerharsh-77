@@ -2,7 +2,7 @@
 
 ### Hi there 👋
 
-I'm Harsh. I love building utilities aimed at increasing Developer productivity :raised_hands: 
+I'm Harsh. I love building utilities aimed at increasing Developer Productivity :raised_hands: 
 
 <!-- 🔭 I’m currently working on [MEVN-CLI](https://github.com/madlabsinc/mevn-cli) -->
 
