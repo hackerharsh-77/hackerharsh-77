@@ -31,35 +31,20 @@ I'm Harsh. I love building utilities aimed at increasing Developer Productivity 
 ---
 
 ```yaml
-name: Erwin Lejeune
-located_in: Abu Dhabi, UAE
-from: Nantes (France)
-job: Senior Robotics Software Engineer
-education: ["Master's in Robotics", "Master's in Embedded Systems", "Bachelor's in Electronics"]
-company: Technology Innovation Institute
-past experiences:
-  - ["Robotics Software Engineer", "UAV Swarms", "Technology Innovation Institute", "UAE", "2022-2023"]
-  - ["Sr Robotics Software Engineer", "UGV Navigation", "Coalescent Mobile Robotics", "Denmark", "2021-2022"]
-  - ["Backend Software Engineer", "Web App Backend (Go/Postgre)", "Hiventive", "Fully Remote", "2020-2021"]
-  - ["Robotics Researcher", "AI Planning/Control", "LS2N", "France", "2019-2021]
-  - ["Robotics Intern", "UGVs", "Ingeniarius", "Portugal", "2019"]
-  - ["Embedded Systems Engineer", "STM32 Virtualization", "Hiventive", "France", "2018-2019"]
-  - ["Robotics Intern", "UGVs", "Laboratory of Digital Sciences of Nantes (LS2N)", "France", "2019"]
+name: Harsh R
+located_in: India
+job: Software Engineer
+education: ["BTech in Computer Science"]
+company: UnifyApps
+past_experiences:
+  - ["Software Engineer", "API Integration, Caching, Performance Optimization", "UnifyApps", "India", "2024-Present"]
+  - ["Software Development Intern", "Full-Stack Development, AWS Deployment", "Chennai Metro Rail Limited", "India", "2022-2023"]
+  - ["Research and Development Intern", "REST API, Machine Learning, AWS Optimization", "Buziness Wizard", "India", "2022"]
 
-fields_of_interests: ["Path Planning", "Trajectory Planning", "Path Following", "Behaviour Planning", 
-                      "Localization", "Sensor Fusion", "Embedded Systems"]
-technical_background: ["Motion Planning", "Optimization", 
-                       "Nonlinear Control", "Real-Time Systems", "Automated Planning"]
-currently_learning: ["Web3", "React", "Vue"]
-will_learn: ["Blockchain (backend)"]
-hobbies: ["Basketball", "Cinema", "Competitive Gaming", "IoT"]
+fields_of_interests: ["Artificial Intelligence", "Database Query Optimization", "Cloud Computing", "Performance Optimization"]
+technical_background: ["React.js", "Next.js", "Spring Boot", "Node.js", "Express.js", "Django", "Quarkus", "AWS", "GitHub Actions", "Database Optimization"]
+
 ```
-<!--Waka readme stats-->
-## 📊 Weekly Development Breakdown
-<!--START_SECTION:SHOW_LINES_OF_CODE-->
-
-<!--END_SECTION:SHOW_LINES_OF_CODE-->
-
 ## 📈 GitHub Contributions
 <!--3D Contribution Graph-->
 ## 📈 GitHub Activity Graph
