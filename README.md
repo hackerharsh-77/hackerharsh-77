@@ -23,10 +23,9 @@ I love building utilities aimed at increasing Developer Productivity.
 
 ## 📊 GitHub Stats  
 
-<div align="center">
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=hackerHarsh-77&theme=dark&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=hackerHarsh-77&show_icons=true&theme=dark&hide_border=true"/>
-</div>
+ ![](https://github-readme-stats.vercel.app/api?username=hackerharsh-77&theme=midnight-purple&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=hackerharsh-77&theme=midnight-purple&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=hackerharsh-77&theme=midnight-purple&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ---
 
