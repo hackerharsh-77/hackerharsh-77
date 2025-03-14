@@ -53,7 +53,7 @@ I love building utilities aimed at increasing Developer Productivity.
 
 ---
 
-## 🐍 Contribution Snake  
+## 🐍 Contribution Snake   
 
 <div align="center">
   <picture>
